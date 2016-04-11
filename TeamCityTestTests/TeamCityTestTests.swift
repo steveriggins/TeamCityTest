@@ -24,7 +24,7 @@ class TeamCityTestTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTAssert(false, "Now this test fails")
+        XCTAssert(true, "Now this test passes")
     }
     
     func testPerformanceExample() {
