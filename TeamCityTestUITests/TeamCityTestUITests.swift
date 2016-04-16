@@ -33,4 +33,19 @@ class TeamCityTestUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testSimpleNav() {
+        
+        let app = XCUIApplication()
+        let nextButton = app.buttons["Next"]
+        nextButton.tap()
+        nextButton.tap()
+        nextButton.tap()
+        
+        let backButton = app.navigationBars["TeamCityTest.View"].childrenMatchingType(.Button).matchingIdentifier("Back").elementBoundByIndex(0)
+        backButton.tap()
+        backButton.tap()
+        backButton.tap()
+        
+    }
+    
 }
